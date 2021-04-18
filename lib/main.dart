@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
          FlatButton(
              onPressed: () {},
              child: Text('click me now!'),
-           color: Colors.red[900],
+           color: Colors.red[300],
          ),
          Container(
            color: Colors.cyan,
