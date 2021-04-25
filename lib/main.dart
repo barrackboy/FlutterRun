@@ -10,29 +10,31 @@ class Home extends StatelessWidget {
         title: Center(child: Text('My First app2')),
         backgroundColor: Colors.red,
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-       crossAxisAlignment: CrossAxisAlignment.start,
-       children: <Widget> [
-         Text('Hello Idiot'),
-         FlatButton(
-             onPressed: () {},
-             child: Text('click me now!'),
-           color: Colors.red[300],
-         ),
-         Container(
-           color: Colors.cyan,
-           padding: EdgeInsets.all(30),
-           child:Text('inside container')
-         )
-       ],
-
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.indigo,
+            child: Text('One'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.green[600],
+            child: Text('Two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.red[400],
+            child: Text('Three'),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('click!'),
         backgroundColor: Colors.red,
-
       ),
     );
   }
